@@ -32,7 +32,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn ng build --prod --build-optimezer --no-progress
+      - run: yarn ng build --prod --build-optimizer --no-progress
       # run tests!
       - run: yarn ng test --sr --no-progress
       - deploy:
